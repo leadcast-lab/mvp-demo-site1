@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ダッシュボード ｜ LeadCast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/tokens.css">
+</head>
+<body>
+
+<div class="app">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">LC</span>
+      <div>
+        <div class="brand-name">LeadCast</div>
+        <div class="brand-sub">Marketing Cloud</div>
+      </div>
+    </a>
+
+    <div class="ws-switch" role="button">
+      <span class="avatar">山</span>
+      <div style="flex:1; min-width:0;">
+        <div style="font-weight:600;">株式会社山田製作所</div>
+        <div style="color:#64748B; font-size:11px;">Business プラン</div>
+      </div>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
+
+    <div class="nav-section">運用</div>
+    <a class="nav-item" data-nav="dashboard.html" href="dashboard.html">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+      ダッシュボード
+    </a>
+    <a class="nav-item" data-nav="videos.html" href="videos.html">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2"></rect></svg>
+      動画ライブラリ
+    </a>
+    <a class="nav-item" href="#">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12a15.3 15.3 0 0 1 4-10z"></path></svg>
+      チャンネル
+    </a>
+    <a class="nav-item" href="#">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M12 1v6m0 10v6M4.22 4.22l4.24 4.24m7.08 7.08l4.24 4.24M1 12h6m10 0h6"></path></svg>
+      インタラクション
+    </a>
+
+    <div class="nav-section">セールス</div>
+    <a class="nav-item" data-nav="leads.html" href="leads.html">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+      リード管理
+    </a>
+    <a class="nav-item" href="#">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+      ワークフロー
+    </a>
+    <a class="nav-item" data-nav="analytics.html" href="analytics.html">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+      分析
+    </a>
+
+    <div class="nav-section">設定</div>
+    <a class="nav-item" href="#">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      連携・統合
+    </a>
+    <a class="nav-item" href="#">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+      ワークスペース設定
+    </a>
+  </aside>
+
+  <!-- MAIN -->
+  <div>
+    <header class="app-header">
+      <div class="breadcrumb">
+        <span>ダッシュボード</span>
+        <span>›</span>
+        <strong style="color:var(--color-text);">ホーム</strong>
+      </div>
+      <div class="search">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" placeholder="動画・リード・チャンネルを検索（⌘K）" />
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="通知">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+        </button>
+        <button class="icon-btn" aria-label="ヘルプ">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+        </button>
+        <div class="user-chip">
+          <span class="avatar">中</span>
+          <span class="name">中西 拓也</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="workarea">
+      <div class="page-head">
+        <div>
+          <h1>こんにちは、中西さん</h1>
+          <p class="desc">直近 30 日間で <b class="tabular">2,431</b> 件のリードを捕捉、<b class="tabular">418</b> 件が VQL に到達しました。</p>
+        </div>
+        <div style="display:flex; gap:8px;">
+          <div class="tabs">
+            <button class="tab">7日</button>
+            <button class="tab active">30日</button>
+            <button class="tab">90日</button>
+            <button class="tab">YTD</button>
+          </div>
+          <button class="btn btn-outline btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            エクスポート
+          </button>
+          <button class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            動画を追加
+          </button>
+        </div>
+      </div>
+
+      <!-- KPI -->
+      <div class="kpi-grid">
+        <div class="kpi">
+          <div class="label">視聴回数</div>
+          <div class="value"><b class="tabular">184,562</b><span class="unit">回</span></div>
+          <div class="delta up">▲ 12.4% vs 前期</div>
+          <div class="spark" data-spark="42,48,52,49,55,58,62,68,72,69,74,78,82,84"></div>
+        </div>
+        <div class="kpi">
+          <div class="label">捕捉リード</div>
+          <div class="value"><b class="tabular">2,431</b><span class="unit">件</span></div>
+          <div class="delta up">▲ 28.7% vs 前期</div>
+          <div class="spark" data-spark="60,64,72,80,82,88,94,102,118,124,130,138,148,156" data-spark-color="#0EA5A4"></div>
+        </div>
+        <div class="kpi">
+          <div class="label">Video-Qualified Lead</div>
+          <div class="value"><b class="tabular">418</b><span class="unit">件</span></div>
+          <div class="delta up">▲ 41.2% vs 前期</div>
+          <div class="spark" data-spark="8,12,14,18,22,28,32,36,42,48,52,58,62,68"></div>
+        </div>
+        <div class="kpi">
+          <div class="label">商談貢献額</div>
+          <div class="value"><b class="tabular">¥38.4</b><span class="unit">M</span></div>
+          <div class="delta up">▲ 18.9% vs 前期</div>
+          <div class="spark" data-spark="20,22,28,32,38,42,48,52,58,62,68,72,78,84" data-spark-color="#0EA5A4"></div>
+        </div>
+      </div>
+
+      <!-- Two-column main -->
+      <div class="grid-2">
+        <!-- LEFT: Activity timeline -->
+        <section class="card">
+          <div style="padding:18px 20px; border-bottom:1px solid var(--color-border); display:flex; align-items:center; justify-content:space-between;">
+            <div>
+              <p class="section-title">最近の重要視聴行動</p>
+              <p class="muted" style="font-size:13px; margin:4px 0 0;">スコア 70 以上に到達した直近のアクティビティ</p>
+            </div>
+            <a href="leads.html" class="btn btn-ghost btn-sm">すべて見る →</a>
+          </div>
+          <div style="padding: 8px 20px 18px;">
+            <div class="timeline">
+              <div class="timeline-row">
+                <span class="dot accent"></span>
+                <div class="meta">
+                  <div><b>田中 良介 様（株式会社グリーンテック）</b> がクイズ「導入決裁者は誰ですか？」で <b>「自分が決裁者」</b> を選択</div>
+                  <small>動画：2026 製品ロードマップ説明会 ／ 視聴率 92%</small>
+                </div>
+                <time>3 分前</time>
+              </div>
+              <div class="timeline-row">
+                <span class="dot"></span>
+                <div class="meta">
+                  <div><b>株式会社マイクロ電機</b> 経由で <b>3 名</b> が「Pricing 詳細」動画を完走（72時間以内）</div>
+                  <small>主要視聴者：佐藤 健一 様（情報システム部 部長）／ 鈴木 真理 様 ／ 山下 達也 様</small>
+                </div>
+                <time>14 分前</time>
+              </div>
+              <div class="timeline-row">
+                <span class="dot accent"></span>
+                <div class="meta">
+                  <div><b>大島 真奈美 様（フジサワ商事）</b> が動画内ブッキングウィジェットから <b>11/15(金) 14:00</b> の商談を予約</div>
+                  <small>担当営業：高橋 一郎 ／ Calendly 経由で確定済</small>
+                </div>
+                <time>32 分前</time>
+              </div>
+              <div class="timeline-row">
+                <span class="dot warn"></span>
+                <div class="meta">
+                  <div>「導入事例：製造業」動画で <b>00:42 地点</b> の離脱率が <b>急上昇（48% → 71%）</b></div>
+                  <small>過去 7 日のヒートマップ偏差で検出 ／ A/B テスト候補に追加</small>
+                </div>
+                <time>1 時間前</time>
+              </div>
+              <div class="timeline-row">
+                <span class="dot"></span>
+                <div class="meta">
+                  <div><b>株式会社東洋クラウド</b> がメールゲートを通過、<b>VQL に昇格</b></div>
+                  <small>kintone「商談アプリ」へ自動レコード作成 ／ 担当：営業 1 課</small>
+                </div>
+                <time>2 時間前</time>
+              </div>
+              <div class="timeline-row">
+                <span class="dot"></span>
+                <div class="meta">
+                  <div><b>森本 由香里 様</b> が「導入事例：金融業」動画を <b>3 回再生</b>、<b>67%</b> 地点で巻き戻し集中</div>
+                  <small>関心度推定：セキュリティ要件 ／ 推奨フォローアップ：ISMS 取得状況の説明</small>
+                </div>
+                <time>3 時間前</time>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- RIGHT: Hot leads -->
+        <section class="card">
+          <div style="padding:18px 20px; border-bottom:1px solid var(--color-border);">
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <p class="section-title">Hot Lead（未対応）</p>
+              <span class="badge badge-danger">8 件</span>
+            </div>
+            <p class="muted" style="font-size:13px; margin:4px 0 0;">優先対応が必要なリード</p>
+          </div>
+          <div style="padding: 4px 0;">
+            <div style="padding:14px 20px; border-bottom:1px solid var(--color-border);">
+              <div class="avatar-row" style="margin-bottom:6px;">
+                <span class="avatar-sm">田</span>
+                <div style="flex:1; min-width:0;">
+                  <div style="font-weight:600; font-size:13.5px;">田中 良介 様</div>
+                  <div class="muted" style="font-size:12px;">株式会社グリーンテック ／ 取締役</div>
+                </div>
+                <div class="score">
+                  <div class="score-bar"><span style="width:94%"></span></div>
+                  <span class="score-num">94</span>
+                </div>
+              </div>
+              <div class="muted" style="font-size:12px; margin-top:4px;">クイズで「自分が決裁者」を選択 ／ 3 動画完走</div>
+            </div>
+
+            <div style="padding:14px 20px; border-bottom:1px solid var(--color-border);">
+              <div class="avatar-row" style="margin-bottom:6px;">
+                <span class="avatar-sm" style="background:var(--color-accent-600);">大</span>
+                <div style="flex:1; min-width:0;">
+                  <div style="font-weight:600; font-size:13.5px;">大島 真奈美 様</div>
+                  <div class="muted" style="font-size:12px;">フジサワ商事 ／ マーケティング部長</div>
+                </div>
+                <div class="score">
+                  <div class="score-bar"><span style="width:88%"></span></div>
+                  <span class="score-num">88</span>
+                </div>
+              </div>
+              <div class="muted" style="font-size:12px; margin-top:4px;">動画内ブッキング完了 ／ 商談予約済</div>
+            </div>
+
+            <div style="padding:14px 20px; border-bottom:1px solid var(--color-border);">
+              <div class="avatar-row" style="margin-bottom:6px;">
+                <span class="avatar-sm" style="background:#7C3AED;">佐</span>
+                <div style="flex:1; min-width:0;">
+                  <div style="font-weight:600; font-size:13.5px;">佐藤 健一 様</div>
+                  <div class="muted" style="font-size:12px;">マイクロ電機 ／ 情報システム部 部長</div>
+                </div>
+                <div class="score">
+                  <div class="score-bar"><span style="width:82%"></span></div>
+                  <span class="score-num">82</span>
+                </div>
+              </div>
+              <div class="muted" style="font-size:12px; margin-top:4px;">Pricing 完走 ／ 同社 3 名が同時視聴</div>
+            </div>
+
+            <div style="padding:14px 20px; border-bottom:1px solid var(--color-border);">
+              <div class="avatar-row" style="margin-bottom:6px;">
+                <span class="avatar-sm" style="background:#DC2626;">森</span>
+                <div style="flex:1; min-width:0;">
+                  <div style="font-weight:600; font-size:13.5px;">森本 由香里 様</div>
+                  <div class="muted" style="font-size:12px;">日本生命グループ ／ DX 推進室</div>
+                </div>
+                <div class="score">
+                  <div class="score-bar"><span style="width:79%"></span></div>
+                  <span class="score-num">79</span>
+                </div>
+              </div>
+              <div class="muted" style="font-size:12px; margin-top:4px;">金融業事例を 3 回 ／ セキュリティ章に集中</div>
+            </div>
+
+            <div style="padding:14px 20px;">
+              <div class="avatar-row" style="margin-bottom:6px;">
+                <span class="avatar-sm" style="background:#0891B2;">山</span>
+                <div style="flex:1; min-width:0;">
+                  <div style="font-weight:600; font-size:13.5px;">山田 浩司 様</div>
+                  <div class="muted" style="font-size:12px;">関西ロジスティクス ／ 経営企画</div>
+                </div>
+                <div class="score">
+                  <div class="score-bar"><span style="width:74%"></span></div>
+                  <span class="score-num">74</span>
+                </div>
+              </div>
+              <div class="muted" style="font-size:12px; margin-top:4px;">フォーム送信済 ／ 比較資料 DL 待ち</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Bottom row: 2-equal -->
+      <div class="grid-2-eq" style="margin-top:16px;">
+        <section class="card">
+          <div style="padding:18px 20px; border-bottom:1px solid var(--color-border); display:flex; align-items:center; justify-content:space-between;">
+            <div>
+              <p class="section-title">動画別パフォーマンス（上位 5 本）</p>
+              <p class="muted" style="font-size:13px; margin:4px 0 0;">直近 30 日 ／ VQL 寄与順</p>
+            </div>
+            <a href="videos.html" class="btn btn-ghost btn-sm">ライブラリ →</a>
+          </div>
+          <table class="table">
+            <thead>
+              <tr><th>動画</th><th style="text-align:right;">視聴</th><th style="text-align:right;">完了率</th><th style="text-align:right;">VQL</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="font-weight:500;">2026 製品ロードマップ説明会<div class="muted" style="font-size:12px; font-weight:400;">12:48 ／ 9 月 14 日公開</div></td>
+                <td style="text-align:right;" class="num">38,412</td>
+                <td style="text-align:right;" class="num">74.2%</td>
+                <td style="text-align:right; font-weight:600;" class="num">142</td>
+              </tr>
+              <tr>
+                <td style="font-weight:500;">導入事例：金融業 大手 5 社のリアル<div class="muted" style="font-size:12px; font-weight:400;">08:22 ／ 8 月 28 日公開</div></td>
+                <td style="text-align:right;" class="num">24,118</td>
+                <td style="text-align:right;" class="num">68.5%</td>
+                <td style="text-align:right; font-weight:600;" class="num">94</td>
+              </tr>
+              <tr>
+                <td style="font-weight:500;">価格・プランの考え方<div class="muted" style="font-size:12px; font-weight:400;">04:08 ／ 9 月 1 日公開</div></td>
+                <td style="text-align:right;" class="num">19,732</td>
+                <td style="text-align:right;" class="num">82.1%</td>
+                <td style="text-align:right; font-weight:600;" class="num">76</td>
+              </tr>
+              <tr>
+                <td style="font-weight:500;">Salesforce 連携セットアップ完全版<div class="muted" style="font-size:12px; font-weight:400;">15:32 ／ 8 月 18 日公開</div></td>
+                <td style="text-align:right;" class="num">12,308</td>
+                <td style="text-align:right;" class="num">61.8%</td>
+                <td style="text-align:right; font-weight:600;" class="num">58</td>
+              </tr>
+              <tr>
+                <td style="font-weight:500;">CEO による創業ストーリー<div class="muted" style="font-size:12px; font-weight:400;">06:14 ／ 7 月 4 日公開</div></td>
+                <td style="text-align:right;" class="num">9,471</td>
+                <td style="text-align:right;" class="num">71.4%</td>
+                <td style="text-align:right; font-weight:600;" class="num">48</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="card">
+          <div style="padding:18px 20px; border-bottom:1px solid var(--color-border); display:flex; align-items:center; justify-content:space-between;">
+            <div>
+              <p class="section-title">ワークフロー実行ステータス</p>
+              <p class="muted" style="font-size:13px; margin:4px 0 0;">直近 24 時間</p>
+            </div>
+            <span class="badge badge-success">すべて正常</span>
+          </div>
+          <div style="padding: 16px 20px;">
+
+            <div style="display:flex; align-items:center; gap:12px; padding:10px 0; border-bottom:1px dashed var(--color-border);">
+              <div style="width:36px; height:36px; border-radius:8px; background:var(--color-primary-50); display:grid; place-items:center; color:var(--color-primary-700);">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              </div>
+              <div style="flex:1; min-width:0;">
+                <div style="font-weight:600; font-size:13.5px;">Hot Lead → Slack #sales-alert</div>
+                <div class="muted" style="font-size:12px;">8 件実行 ／ 平均 1.2 秒</div>
+              </div>
+              <span class="badge badge-success">8 / 8</span>
+            </div>
+
+            <div style="display:flex; align-items:center; gap:12px; padding:10px 0; border-bottom:1px dashed var(--color-border);">
+              <div style="width:36px; height:36px; border-radius:8px; background:#FEF3C7; display:grid; place-items:center; color:#B45309;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              </div>
+              <div style="flex:1; min-width:0;">
+                <div style="font-weight:600; font-size:13.5px;">VQL 到達 → Salesforce 商談作成</div>
+                <div class="muted" style="font-size:12px;">12 件中 1 件で OAuth トークン期限切れ</div>
+              </div>
+              <span class="badge badge-warning">11 / 12</span>
+            </div>
+
+            <div style="display:flex; align-items:center; gap:12px; padding:10px 0; border-bottom:1px dashed var(--color-border);">
+              <div style="width:36px; height:36px; border-radius:8px; background:var(--color-accent-50); display:grid; place-items:center; color:var(--color-accent-700);">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div style="flex:1; min-width:0;">
+                <div style="font-weight:600; font-size:13.5px;">フォーム送信 → kintone 「リード」アプリ</div>
+                <div class="muted" style="font-size:12px;">42 件実行 ／ 平均 0.8 秒</div>
+              </div>
+              <span class="badge badge-success">42 / 42</span>
+            </div>
+
+            <div style="display:flex; align-items:center; gap:12px; padding:10px 0;">
+              <div style="width:36px; height:36px; border-radius:8px; background:#EDE9FE; display:grid; place-items:center; color:#6D28D9;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div style="flex:1; min-width:0;">
+                <div style="font-weight:600; font-size:13.5px;">完走者 → リマインダーメール（24時間後）</div>
+                <div class="muted" style="font-size:12px;">28 件キュー ／ 全て送信済</div>
+              </div>
+              <span class="badge badge-success">28 / 28</span>
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

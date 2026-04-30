@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>動画分析 ｜ LeadCast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/tokens.css">
+</head>
+<body>
+
+<div class="app">
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">LC</span>
+      <div>
+        <div class="brand-name">LeadCast</div>
+        <div class="brand-sub">Marketing Cloud</div>
+      </div>
+    </a>
+    <div class="ws-switch">
+      <span class="avatar">山</span>
+      <div style="flex:1; min-width:0;">
+        <div style="font-weight:600;">株式会社山田製作所</div>
+        <div style="color:#64748B; font-size:11px;">Business プラン</div>
+      </div>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
+
+    <div class="nav-section">運用</div>
+    <a class="nav-item" data-nav="dashboard.html" href="dashboard.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>ダッシュボード</a>
+    <a class="nav-item" data-nav="videos.html" href="videos.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2"></rect></svg>動画ライブラリ</a>
+    <a class="nav-item" href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12a15.3 15.3 0 0 1 4-10z"></path></svg>チャンネル</a>
+    <a class="nav-item" href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M12 1v6m0 10v6M4.22 4.22l4.24 4.24m7.08 7.08l4.24 4.24M1 12h6m10 0h6"></path></svg>インタラクション</a>
+
+    <div class="nav-section">セールス</div>
+    <a class="nav-item" data-nav="leads.html" href="leads.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>リード管理</a>
+    <a class="nav-item" href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>ワークフロー</a>
+    <a class="nav-item" data-nav="analytics.html" href="analytics.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>分析</a>
+
+    <div class="nav-section">設定</div>
+    <a class="nav-item" href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>連携・統合</a>
+    <a class="nav-item" href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>ワークスペース設定</a>
+  </aside>
+
+  <div>
+    <header class="app-header">
+      <div class="breadcrumb">
+        <span>分析</span><span>›</span><span>動画別</span><span>›</span><strong style="color:var(--color-text);">2026 製品ロードマップ説明会</strong>
+      </div>
+      <div class="search">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" placeholder="検索（⌘K）" />
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></button>
+        <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></button>
+        <div class="user-chip"><span class="avatar">中</span><span class="name">中西 拓也</span></div>
+      </div>
+    </header>
+
+    <main class="workarea">
+      <div class="page-head">
+        <div>
+          <h1>2026 製品ロードマップ説明会</h1>
+          <p class="desc">12:48 ／ 9 月 14 日公開 ／ <a href="videos.html" style="color:var(--color-primary-700);">動画ページに戻る</a></p>
+        </div>
+        <div style="display:flex; gap:8px;">
+          <div class="tabs">
+            <button class="tab">7日</button>
+            <button class="tab active">30日</button>
+            <button class="tab">90日</button>
+            <button class="tab">全期間</button>
+          </div>
+          <button class="btn btn-outline btn-sm">A/B テストを作成</button>
+        </div>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi"><div class="label">視聴回数</div><div class="value"><b class="tabular">38,412</b></div><div class="delta up">▲ 28.4%</div><div class="spark" data-spark="22,28,32,30,34,42,48,52,58,64,68,72,78,84"></div></div>
+        <div class="kpi"><div class="label">平均視聴率</div><div class="value"><b class="tabular">74.2</b><span class="unit">%</span></div><div class="delta up">▲ 4.1pt</div><div class="spark" data-spark="65,68,69,71,72,73,74,75,75,74,76,77,75,74" data-spark-color="#0EA5A4"></div></div>
+        <div class="kpi"><div class="label">完了率</div><div class="value"><b class="tabular">61.8</b><span class="unit">%</span></div><div class="delta up">▲ 8.2pt</div><div class="spark" data-spark="50,52,54,56,57,58,59,60,61,61,62,62,62,62"></div></div>
+        <div class="kpi"><div class="label">VQL 寄与</div><div class="value"><b class="tabular">142</b><span class="unit">件</span></div><div class="delta up">▲ 41.2%</div><div class="spark" data-spark="20,28,38,46,58,68,78,88,98,108,118,128,135,142" data-spark-color="#0EA5A4"></div></div>
+      </div>
+
+      <!-- HEATMAP -->
+      <section class="card" style="margin-bottom:16px;">
+        <div style="padding:18px 20px; border-bottom:1px solid var(--color-border); display:flex; align-items:center; justify-content:space-between;">
+          <div>
+            <p class="section-title">秒単位ヒートマップ</p>
+            <p class="muted" style="font-size:13px; margin:4px 0 0;">視聴・離脱・巻き戻しの密度を 1 秒粒度で集計</p>
+          </div>
+          <div style="display:flex; gap:8px; align-items:center; font-size:12px; color:var(--color-text-muted);">
+            <span style="display:inline-flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; background:hsl(220 60% 90%); border-radius:2px;"></span>低</span>
+            <span style="display:inline-flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; background:hsl(220 60% 60%); border-radius:2px;"></span>中</span>
+            <span style="display:inline-flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; background:hsl(220 60% 20%); border-radius:2px;"></span>高</span>
+          </div>
+        </div>
+        <div class="heatmap">
+          <div class="scale">
+            <span>視聴密度</span>
+            <span>100%</span>
+          </div>
+          <div class="heatmap-bars" data-heatmap></div>
+          <div class="heatmap-axis">
+            <span>00:00</span><span>02:08</span><span>04:16</span><span>06:24</span><span>08:32</span><span>10:40</span><span>12:48</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- DROP-OFF + Insights -->
+      <div class="grid-2">
+        <section class="card">
+          <div style="padding:18px 20px; border-bottom:1px solid var(--color-border);">
+            <p class="section-title">特筆すべきポイント</p>
+            <p class="muted" style="font-size:13px; margin:4px 0 0;">過去 30 日のヒートマップ偏差から自動検出</p>
+          </div>
+          <div style="padding: 4px 20px;">
+            <div style="display:flex; gap:14px; padding:14px 0; border-bottom:1px solid var(--color-border);">
+              <div style="width:32px; height:32px; border-radius:8px; background:var(--color-danger-bg); color:var(--color-danger); display:grid; place-items:center; flex-shrink:0;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+              </div>
+              <div style="flex:1; min-width:0;">
+                <div style="font-weight:600; font-size:14px;"><span class="tabular">00:42</span> で離脱率が急上昇（48% → 71%）</div>
+                <div class="muted" style="font-size:13px; margin-top:2px;">直前の発話：「ここで料金体系について…」<br>多くの視聴者が「価格を最初に知りたい」と感じている可能性が高い。サムネイルや冒頭で価格訴求の A/B テストを推奨。</div>
+              </div>
+              <button class="btn btn-outline btn-sm" style="flex-shrink:0;">A/B 作成</button>
+            </div>
+            <div style="display:flex; gap:14px; padding:14px 0; border-bottom:1px solid var(--color-border);">
+              <div style="width:32px; height:32px; border-radius:8px; background:var(--color-warning-bg); color:var(--color-warning); display:grid; place-items:center; flex-shrink:0;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+              </div>
+              <div style="flex:1; min-width:0;">
+                <div style="font-weight:600; font-size:14px;"><span class="tabular">06:42 - 07:08</span> で巻き戻しが集中</div>
+                <div class="muted" style="font-size:13px; margin-top:2px;">「kintone 連携の動作デモ」セクション。視聴者は重要だと感じているが理解しづらい可能性。チャプターの分割やキャプション補強を推奨。</div>
+              </div>
+              <button class="btn btn-outline btn-sm" style="flex-shrink:0;">チャプター編集</button>
+            </div>
+            <div style="display:flex; gap:14px; padding:14px 0;">
+              <div style="width:32px; height:32px; border-radius:8px; background:var(--color-success-bg); color:var(--color-success); display:grid; place-items:center; flex-shrink:0;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div style="flex:1; min-width:0;">
+                <div style="font-weight:600; font-size:14px;"><span class="tabular">10:32</span> のクイズで <span class="tabular">68%</span> が回答</div>
+                <div class="muted" style="font-size:13px; margin-top:2px;">業界平均（22%）を大きく上回るエンゲージメント。回答内容を Salesforce タグに反映するワークフローが正常動作中。</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <div style="padding:18px 20px; border-bottom:1px solid var(--color-border);">
+            <p class="section-title">主要視聴セグメント</p>
+            <p class="muted" style="font-size:13px; margin:4px 0 0;">業種別エンゲージメント</p>
+          </div>
+          <div style="padding: 14px 20px;">
+            <div style="display:flex; align-items:center; gap:12px; padding:8px 0;">
+              <span style="font-size:13px; min-width:96px;">製造業</span>
+              <div style="flex:1; height:8px; background:var(--color-bg); border-radius:4px; overflow:hidden;"><span style="display:block; height:100%; width:88%; background:var(--color-primary-700);"></span></div>
+              <span class="tabular" style="font-size:13px; font-weight:600; min-width:48px; text-align:right;">88%</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; padding:8px 0;">
+              <span style="font-size:13px; min-width:96px;">金融業</span>
+              <div style="flex:1; height:8px; background:var(--color-bg); border-radius:4px; overflow:hidden;"><span style="display:block; height:100%; width:74%; background:var(--color-primary-600);"></span></div>
+              <span class="tabular" style="font-size:13px; font-weight:600; min-width:48px; text-align:right;">74%</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; padding:8px 0;">
+              <span style="font-size:13px; min-width:96px;">IT・通信</span>
+              <div style="flex:1; height:8px; background:var(--color-bg); border-radius:4px; overflow:hidden;"><span style="display:block; height:100%; width:69%; background:var(--color-accent-500);"></span></div>
+              <span class="tabular" style="font-size:13px; font-weight:600; min-width:48px; text-align:right;">69%</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; padding:8px 0;">
+              <span style="font-size:13px; min-width:96px;">商社・流通</span>
+              <div style="flex:1; height:8px; background:var(--color-bg); border-radius:4px; overflow:hidden;"><span style="display:block; height:100%; width:58%; background:var(--color-primary-500);"></span></div>
+              <span class="tabular" style="font-size:13px; font-weight:600; min-width:48px; text-align:right;">58%</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; padding:8px 0;">
+              <span style="font-size:13px; min-width:96px;">医療・ヘルスケア</span>
+              <div style="flex:1; height:8px; background:var(--color-bg); border-radius:4px; overflow:hidden;"><span style="display:block; height:100%; width:51%; background:var(--color-primary-400);"></span></div>
+              <span class="tabular" style="font-size:13px; font-weight:600; min-width:48px; text-align:right;">51%</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; padding:8px 0;">
+              <span style="font-size:13px; min-width:96px;">公共・自治体</span>
+              <div style="flex:1; height:8px; background:var(--color-bg); border-radius:4px; overflow:hidden;"><span style="display:block; height:100%; width:42%; background:var(--color-primary-300);"></span></div>
+              <span class="tabular" style="font-size:13px; font-weight:600; min-width:48px; text-align:right;">42%</span>
+            </div>
+            <div class="divider"></div>
+            <div class="muted" style="font-size:12px; line-height:1.7;">完了率 ＝ 動画長の 90% 以上を視聴した視聴者の割合（アノニマス含む）</div>
+          </div>
+        </section>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
