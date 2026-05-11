@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>1:1 AI パーソナライズ ｜ LeadCast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/tokens.css">
+</head>
+<body>
+
+<div class="app">
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">LC</span>
+      <div><div class="brand-name">LeadCast</div><div class="brand-sub">Marketing Cloud</div></div>
+    </a>
+    <div class="ws-switch">
+      <span class="avatar">山</span>
+      <div style="flex:1; min-width:0;"><div style="font-weight:600;">株式会社山田製作所</div><div style="color:#64748B; font-size:11px;">Business プラン</div></div>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
+
+    <div class="nav-section">運用</div>
+    <a class="nav-item" data-nav="dashboard.html" href="dashboard.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>ダッシュボード</a>
+    <a class="nav-item" data-nav="videos.html" href="videos.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2"></rect></svg>動画ライブラリ</a>
+
+    <div class="nav-section">配信</div>
+    <a class="nav-item" data-nav="distribution.html" href="distribution.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><line x1="8.6" y1="10.7" x2="15.4" y2="7.3"/><line x1="8.6" y1="13.3" x2="15.4" y2="16.7"/></svg>1:n SNS 配信</a>
+    <a class="nav-item" data-nav="personalize.html" href="personalize.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5z"/><circle cx="18" cy="18" r="3"/></svg>1:1 AI パーソナライズ</a>
+    <a class="nav-item" data-nav="live.html" href="live.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M16.95 7.05a7 7 0 010 9.9M7.05 7.05a7 7 0 000 9.9"/></svg>Live 配信</a>
+
+    <div class="nav-section">セールス</div>
+    <a class="nav-item" data-nav="leads.html" href="leads.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>リード管理</a>
+    <a class="nav-item" data-nav="analytics.html" href="analytics.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>分析</a>
+    <a class="nav-item" href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>ワークフロー</a>
+
+    <div class="nav-section">設定</div>
+    <a class="nav-item" href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>連携・統合</a>
+    <a class="nav-item" href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>ワークスペース設定</a>
+  </aside>
+
+  <div>
+    <header class="app-header">
+      <div class="breadcrumb"><span>配信</span><span>›</span><strong style="color:var(--color-text);">1:1 AI パーソナライズ</strong></div>
+      <div class="search">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" placeholder="リード氏名・会社名・テンプレート名で検索" />
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></button>
+        <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></button>
+        <div class="user-chip"><span class="avatar">中</span><span class="name">中西 拓也</span></div>
+      </div>
+    </header>
+
+    <main class="workarea">
+      <div class="page-head">
+        <div>
+          <h1 style="display:flex; align-items:center; gap:10px;">1:1 AI パーソナライズ <span class="ai-badge solid" style="vertical-align:middle;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5z"/></svg>BETA</span></h1>
+          <p class="desc">事前ヒアリング情報を元に、AI が冒頭挨拶や課題シーンを差し替えた <b class="ai-text-grad" style="font-weight:600;">1 人専用の動画</b> を自動生成します。</p>
+        </div>
+        <div style="display:flex; gap:8px;">
+          <button class="btn btn-outline btn-sm">テンプレート</button>
+          <button class="btn btn-primary btn-sm" style="background:linear-gradient(135deg,var(--ai-from),var(--ai-mid),var(--ai-to)); border:0;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5z"/></svg>
+            新しく 1:1 動画を生成
+          </button>
+        </div>
+      </div>
+
+      <!-- KPI strip -->
+      <div class="kpi-grid">
+        <div class="kpi">
+          <div class="label">生成数（今月）</div>
+          <div class="value"><b class="tabular">1,842</b><span class="unit">本</span></div>
+          <div class="delta up">▲ 28.7% vs 前月</div>
+          <div class="spark" data-spark="20,32,48,62,72,82,98,108,124,138,152,164,178,184" data-spark-color="#6D28D9"></div>
+        </div>
+        <div class="kpi">
+          <div class="label">完視聴率</div>
+          <div class="value"><b class="tabular">72.4</b><span class="unit">%</span></div>
+          <div class="delta up">▲ 18 pt vs 一般動画</div>
+          <div class="spark" data-spark="58,60,62,64,66,68,68,70,71,72,73,72,73,72" data-spark-color="#0EA5A4"></div>
+        </div>
+        <div class="kpi">
+          <div class="label">商談化率（1:1 視聴者中）</div>
+          <div class="value"><b class="tabular">12.8</b><span class="unit">%</span></div>
+          <div class="delta up">▲ 3.4× vs 通常動画</div>
+          <div class="spark" data-spark="6,7,8,9,10,11,11,12,12,13,12,13,13,13" data-spark-color="#3B66F1"></div>
+        </div>
+        <div class="kpi">
+          <div class="label">平均生成時間</div>
+          <div class="value"><b class="tabular">3:12</b><span class="unit">分</span></div>
+          <div class="delta down">▼ 24 秒 (改善)</div>
+          <div class="spark" data-spark="4,4,4,4,3,3,3,3,3,3,3,3,3,3" data-spark-color="#94A3B8"></div>
+        </div>
+      </div>
+
+      <!-- How it works (mini) -->
+      <section class="card card-pad" style="margin-bottom:16px; background:linear-gradient(135deg, #fff 0%, rgba(109,40,217,.04) 100%); border-color:rgba(109,40,217,.18);">
+        <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:24px; align-items:start;">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+              <span class="tabular" style="font-family:Inter; font-size:24px; font-weight:800; color:var(--ai-from);">01</span>
+              <b style="font-size:13.5px;">情報取り込み</b>
+            </div>
+            <p class="muted" style="font-size:12.5px; line-height:1.75; margin:0;">CRM・フォーム・名刺から、リードの氏名・会社・課題・興味を取得</p>
+          </div>
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+              <span class="tabular" style="font-family:Inter; font-size:24px; font-weight:800; color:var(--ai-mid);">02</span>
+              <b style="font-size:13.5px;">AI 台本生成</b>
+            </div>
+            <p class="muted" style="font-size:12.5px; line-height:1.75; margin:0;">テンプレ台本にリード固有の挨拶・課題セクションを差し込み</p>
+          </div>
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+              <span class="tabular" style="font-family:Inter; font-size:24px; font-weight:800; color:var(--ai-mid);">03</span>
+              <b style="font-size:13.5px;">動画合成</b>
+            </div>
+            <p class="muted" style="font-size:12.5px; line-height:1.75; margin:0;">本人音声・映像を AI が短時間でリップシンク合成（平均 3 分 12 秒）</p>
+          </div>
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+              <span class="tabular" style="font-family:Inter; font-size:24px; font-weight:800; color:var(--ai-to);">04</span>
+              <b style="font-size:13.5px;">配信・追跡</b>
+            </div>
+            <p class="muted" style="font-size:12.5px; line-height:1.75; margin:0;">メール／DM で 1 人だけに配信。視聴ログから次の最適化を提案</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tab switcher -->
+      <div class="row-flex wrap" style="justify-content:space-between; margin-bottom:8px;">
+        <div class="subnav-row">
+          <button class="tab active">すべて（94）</button>
+          <button class="tab">生成中（3）</button>
+          <button class="tab">送付済（62）</button>
+          <button class="tab">商談化（18）</button>
+          <button class="tab">下書き（11）</button>
+        </div>
+        <div class="toolbar-group">
+          <div class="input">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M6 12h12M10 18h4"></path></svg>
+            <span>すべてのテンプレート</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Generation queue -->
+      <div class="rail-head">
+        <div>
+          <h2><span class="ai-text-grad">生成キュー</span>（3 件）</h2>
+          <p class="desc">AI がいま動画を作っているリードたち</p>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div class="persona-card">
+          <div class="who">
+            <span class="av">高</span>
+            <div style="flex:1; min-width:0;">
+              <div class="n">高橋 美咲 様</div>
+              <div class="c">大日本電子 ／ DX 推進部 マネージャー</div>
+            </div>
+            <span class="ai-badge solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5z"/></svg>合成中</span>
+          </div>
+          <div class="src">事前ヒアリング：「製造ラインの稼働率モニタリングをリアルタイム化したい」</div>
+          <div class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg><b style="font-size:12px; color:var(--color-text-muted);">AI 台本（プレビュー）</b></div>
+          <div class="out">「<em>高橋様</em>、<em>大日本電子様</em>でお話を伺った<em>「稼働率モニタリングのリアルタイム化」</em>という課題に、本動画で具体的にお答えします。」</div>
+          <div class="status"><div class="progress"><span>残り 1:42</span><div class="bar"><span style="width:64%"></span></div></div></div>
+        </div>
+
+        <div class="persona-card">
+          <div class="who">
+            <span class="av">中</span>
+            <div style="flex:1; min-width:0;">
+              <div class="n">中島 健太郎 様</div>
+              <div class="c">関西ロジスティクス ／ 物流DX室 リーダー</div>
+            </div>
+            <span class="ai-badge solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5z"/></svg>合成中</span>
+          </div>
+          <div class="src">事前ヒアリング：「ドライバー研修動画の視聴完了率を上げたい」</div>
+          <div class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg><b style="font-size:12px; color:var(--color-text-muted);">AI 台本（プレビュー）</b></div>
+          <div class="out">「<em>中島様</em>、<em>関西ロジスティクス</em>様の<em>「ドライバー研修の視聴率向上」</em>には、章ジャンプ機能とクイズ連動が特に効果的です。本動画でその仕組みをご説明します。」</div>
+          <div class="status"><div class="progress"><span>残り 2:48</span><div class="bar"><span style="width:32%"></span></div></div></div>
+        </div>
+
+        <div class="persona-card">
+          <div class="who">
+            <span class="av">松</span>
+            <div style="flex:1; min-width:0;">
+              <div class="n">松田 早苗 様</div>
+              <div class="c">第一商事 ／ 経営企画室 室長</div>
+            </div>
+            <span class="badge">台本確認待ち</span>
+          </div>
+          <div class="src">事前ヒアリング：「商談化までの平均日数を短縮したい」「経営層への報告材料も欲しい」</div>
+          <div class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg><b style="font-size:12px; color:var(--color-text-muted);">AI 台本（要承認）</b></div>
+          <div class="out">「<em>松田様</em>、<em>第一商事様</em>でご検討中の<em>「商談化リードタイム短縮」</em>と<em>「経営層レポーティング」</em>の両立は、LeadCast の ROI ダッシュボード機能が解決します。」</div>
+          <div class="status">
+            <span class="muted">承認 → 合成へ</span>
+            <button class="btn btn-primary btn-sm">承認して合成開始</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sent / engaged list -->
+      <div class="rail-head">
+        <div>
+          <h2>送付済み 1:1 動画</h2>
+          <p class="desc">視聴・反応・商談化までの状態をリードごとに追跡</p>
+        </div>
+      </div>
+
+      <section class="card">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>宛先リード</th>
+              <th>テンプレート</th>
+              <th>送付日時</th>
+              <th>視聴</th>
+              <th>反応</th>
+              <th>状態</th>
+              <th style="width:130px;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="row-flex"><span class="avatar-sm" style="background:linear-gradient(135deg,var(--ai-from),var(--ai-to));">田</span>
+                  <div><div style="font-weight:600;">田中 良介 様</div><div class="muted" style="font-size:11.5px;">グリーンテック ／ 取締役</div></div>
+                </div>
+              </td>
+              <td>営業属人化からの脱却</td>
+              <td class="num">5/12 14:32</td>
+              <td><b class="num">3 回</b> <span class="muted" style="font-size:11.5px;">完視聴</span></td>
+              <td><span class="badge badge-success">商談予約</span></td>
+              <td><span class="badge badge-primary">商談化</span></td>
+              <td style="text-align:right;"><button class="btn btn-ghost btn-sm">詳細 →</button></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="row-flex"><span class="avatar-sm" style="background:linear-gradient(135deg,var(--ai-from),var(--ai-to));">浅</span>
+                  <div><div style="font-weight:600;">浅井 正太郎 様</div><div class="muted" style="font-size:11.5px;">関東イーグルス ／ マーケ戦略課 課長</div></div>
+                </div>
+              </td>
+              <td>会員エンゲージメント向上</td>
+              <td class="num">5/12 09:18</td>
+              <td><b class="num">2 回</b> <span class="muted" style="font-size:11.5px;">78%</span></td>
+              <td><span class="muted">—</span></td>
+              <td><span class="badge badge-warning">熟考中</span></td>
+              <td style="text-align:right;"><button class="btn btn-ghost btn-sm">詳細 →</button></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="row-flex"><span class="avatar-sm" style="background:linear-gradient(135deg,var(--ai-from),var(--ai-to));">森</span>
+                  <div><div style="font-weight:600;">森本 由香里 様</div><div class="muted" style="font-size:11.5px;">日本生命グループ ／ DX 推進室</div></div>
+                </div>
+              </td>
+              <td>金融業セキュリティ要件詳細</td>
+              <td class="num">5/11 16:48</td>
+              <td><b class="num">3 回</b> <span class="muted" style="font-size:11.5px;">巻き戻し集中</span></td>
+              <td><span class="badge badge-accent">資料 DL</span></td>
+              <td><span class="badge badge-primary">商談打診中</span></td>
+              <td style="text-align:right;"><button class="btn btn-ghost btn-sm">詳細 →</button></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="row-flex"><span class="avatar-sm" style="background:linear-gradient(135deg,var(--ai-from),var(--ai-to));">藤</span>
+                  <div><div style="font-weight:600;">藤原 雅人 様</div><div class="muted" style="font-size:11.5px;">中部精密 ／ 営業企画部</div></div>
+                </div>
+              </td>
+              <td>製造業向け事例集 — 中部地区</td>
+              <td class="num">5/11 11:02</td>
+              <td><b class="num">1 回</b> <span class="muted" style="font-size:11.5px;">42% で離脱</span></td>
+              <td><span class="muted">—</span></td>
+              <td><span class="badge">フォロー要</span></td>
+              <td style="text-align:right;"><button class="btn btn-ghost btn-sm">詳細 →</button></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="row-flex"><span class="avatar-sm" style="background:linear-gradient(135deg,var(--ai-from),var(--ai-to));">小</span>
+                  <div><div style="font-weight:600;">小林 翔 様</div><div class="muted" style="font-size:11.5px;">東京クラウド ／ プロダクト戦略</div></div>
+                </div>
+              </td>
+              <td>オンプレ移行のメリット比較</td>
+              <td class="num">5/10 17:24</td>
+              <td><span class="muted">未開封</span></td>
+              <td><span class="muted">—</span></td>
+              <td><span class="badge badge-warning">未開封</span></td>
+              <td style="text-align:right;"><button class="btn btn-ghost btn-sm">詳細 →</button></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="row-flex"><span class="avatar-sm" style="background:linear-gradient(135deg,var(--ai-from),var(--ai-to));">山</span>
+                  <div><div style="font-weight:600;">山口 真央 様</div><div class="muted" style="font-size:11.5px;">関東サービス ／ 営業部 部長</div></div>
+                </div>
+              </td>
+              <td>営業属人化からの脱却</td>
+              <td class="num">5/10 10:18</td>
+              <td><b class="num">2 回</b> <span class="muted" style="font-size:11.5px;">完視聴</span></td>
+              <td><span class="badge badge-success">商談予約</span></td>
+              <td><span class="badge badge-primary">商談化</span></td>
+              <td style="text-align:right;"><button class="btn btn-ghost btn-sm">詳細 →</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>1:n SNS 配信 ｜ LeadCast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/tokens.css">
+</head>
+<body>
+
+<div class="app">
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">LC</span>
+      <div><div class="brand-name">LeadCast</div><div class="brand-sub">Marketing Cloud</div></div>
+    </a>
+    <div class="ws-switch">
+      <span class="avatar">山</span>
+      <div style="flex:1; min-width:0;"><div style="font-weight:600;">株式会社山田製作所</div><div style="color:#64748B; font-size:11px;">Business プラン</div></div>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
+
+    <div class="nav-section">運用</div>
+    <a class="nav-item" data-nav="dashboard.html" href="dashboard.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>ダッシュボード</a>
+    <a class="nav-item" data-nav="videos.html" href="videos.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2"></rect></svg>動画ライブラリ</a>
+
+    <div class="nav-section">配信</div>
+    <a class="nav-item" data-nav="distribution.html" href="distribution.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><line x1="8.6" y1="10.7" x2="15.4" y2="7.3"/><line x1="8.6" y1="13.3" x2="15.4" y2="16.7"/></svg>1:n SNS 配信</a>
+    <a class="nav-item" data-nav="personalize.html" href="personalize.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5z"/><circle cx="18" cy="18" r="3"/></svg>1:1 AI パーソナライズ</a>
+    <a class="nav-item" data-nav="live.html" href="live.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M16.95 7.05a7 7 0 010 9.9M7.05 7.05a7 7 0 000 9.9"/></svg>Live 配信</a>
+
+    <div class="nav-section">セールス</div>
+    <a class="nav-item" data-nav="leads.html" href="leads.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>リード管理</a>
+    <a class="nav-item" data-nav="analytics.html" href="analytics.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>分析</a>
+    <a class="nav-item" href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>ワークフロー</a>
+
+    <div class="nav-section">設定</div>
+    <a class="nav-item" href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>連携・統合</a>
+    <a class="nav-item" href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>ワークスペース設定</a>
+  </aside>
+
+  <div>
+    <header class="app-header">
+      <div class="breadcrumb"><span>配信</span><span>›</span><strong style="color:var(--color-text);">1:n SNS 配信</strong></div>
+      <div class="search">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" placeholder="配信先・動画・キャプションを検索（⌘K）" />
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></button>
+        <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></button>
+        <div class="user-chip"><span class="avatar">中</span><span class="name">中西 拓也</span></div>
+      </div>
+    </header>
+
+    <main class="workarea">
+      <div class="page-head">
+        <div>
+          <h1>1:n SNS 配信</h1>
+          <p class="desc">1 本の動画を主要 SNS へ一括配信し、プラットフォーム別に視聴・反応・流入リードを横並びで分析できます。</p>
+        </div>
+        <div style="display:flex; gap:8px;">
+          <div class="tabs">
+            <button class="tab">7日</button>
+            <button class="tab active">30日</button>
+            <button class="tab">90日</button>
+          </div>
+          <button class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            新しい配信
+          </button>
+        </div>
+      </div>
+
+      <!-- Connected accounts -->
+      <section class="card" style="margin-bottom:16px;">
+        <div style="padding:16px 20px; border-bottom:1px solid var(--color-border); display:flex; align-items:center; justify-content:space-between;">
+          <p class="section-title">接続中のアカウント</p>
+          <button class="btn btn-ghost btn-sm">+ アカウント追加</button>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(6, 1fr); gap:0;">
+          <div style="padding:18px 20px; border-right:1px solid var(--color-border); text-align:center;">
+            <span class="ch-dot youtube" data-channel="youtube" style="width:32px; height:32px;"></span>
+            <div style="font-weight:600; font-size:13px; margin-top:8px;">YouTube</div>
+            <div class="muted" style="font-size:11.5px;">@yamadaseisakusho</div>
+            <div class="tabular" style="font-size:11.5px; color:var(--color-success); margin-top:4px;">● 接続中</div>
+          </div>
+          <div style="padding:18px 20px; border-right:1px solid var(--color-border); text-align:center;">
+            <span class="ch-dot x" data-channel="x" style="width:32px; height:32px;"></span>
+            <div style="font-weight:600; font-size:13px; margin-top:8px;">X</div>
+            <div class="muted" style="font-size:11.5px;">@yamada_lab</div>
+            <div class="tabular" style="font-size:11.5px; color:var(--color-success); margin-top:4px;">● 接続中</div>
+          </div>
+          <div style="padding:18px 20px; border-right:1px solid var(--color-border); text-align:center;">
+            <span class="ch-dot linkedin" data-channel="linkedin" style="width:32px; height:32px;"></span>
+            <div style="font-weight:600; font-size:13px; margin-top:8px;">LinkedIn</div>
+            <div class="muted" style="font-size:11.5px;">山田製作所 公式</div>
+            <div class="tabular" style="font-size:11.5px; color:var(--color-success); margin-top:4px;">● 接続中</div>
+          </div>
+          <div style="padding:18px 20px; border-right:1px solid var(--color-border); text-align:center;">
+            <span class="ch-dot instagram" data-channel="instagram" style="width:32px; height:32px;"></span>
+            <div style="font-weight:600; font-size:13px; margin-top:8px;">Instagram</div>
+            <div class="muted" style="font-size:11.5px;">@yamada.official</div>
+            <div class="tabular" style="font-size:11.5px; color:var(--color-success); margin-top:4px;">● 接続中</div>
+          </div>
+          <div style="padding:18px 20px; border-right:1px solid var(--color-border); text-align:center;">
+            <span class="ch-dot facebook" data-channel="facebook" style="width:32px; height:32px;"></span>
+            <div style="font-weight:600; font-size:13px; margin-top:8px;">Facebook</div>
+            <div class="muted" style="font-size:11.5px;">Yamada Seisakusho</div>
+            <div class="tabular" style="font-size:11.5px; color:var(--color-success); margin-top:4px;">● 接続中</div>
+          </div>
+          <div style="padding:18px 20px; text-align:center;">
+            <span class="ch-dot leadcast" data-channel="leadcast" style="width:32px; height:32px;"></span>
+            <div style="font-weight:600; font-size:13px; margin-top:8px;">自社プレイヤー</div>
+            <div class="muted" style="font-size:11.5px;">leadcast.jp 埋め込み</div>
+            <div class="tabular" style="font-size:11.5px; color:var(--color-success); margin-top:4px;">● 常時 ON</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KPI -->
+      <div class="kpi-grid">
+        <div class="kpi">
+          <div class="label">合計再生</div>
+          <div class="value"><b class="tabular">184,562</b><span class="unit">回</span></div>
+          <div class="delta up">▲ 12.4%</div>
+          <div class="spark" data-spark="42,48,52,49,55,58,62,68,72,69,74,78,82,84"></div>
+        </div>
+        <div class="kpi">
+          <div class="label">いいね・リアクション</div>
+          <div class="value"><b class="tabular">12,418</b><span class="unit"></span></div>
+          <div class="delta up">▲ 22.1%</div>
+          <div class="spark" data-spark="32,38,42,46,52,58,62,68,72,78,82,88,92,98" data-spark-color="#FF0033"></div>
+        </div>
+        <div class="kpi">
+          <div class="label">コメント</div>
+          <div class="value"><b class="tabular">2,148</b><span class="unit"></span></div>
+          <div class="delta up">▲ 18.7%</div>
+          <div class="spark" data-spark="18,22,28,32,38,42,42,48,52,58,62,68,72,76" data-spark-color="#0A66C2"></div>
+        </div>
+        <div class="kpi">
+          <div class="label">流入リード（自社プレイヤー遷移）</div>
+          <div class="value"><b class="tabular">998</b><span class="unit">件</span></div>
+          <div class="delta up">▲ 28.7%</div>
+          <div class="spark" data-spark="20,22,28,32,38,42,48,52,58,62,68,72,78,84" data-spark-color="#0EA5A4"></div>
+        </div>
+      </div>
+
+      <!-- Multi-platform time series -->
+      <section class="card" style="padding:20px; margin-bottom:16px;">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;">
+          <div>
+            <p class="section-title">プラットフォーム別 視聴推移</p>
+            <p class="muted" style="font-size:13px; margin:4px 0 0;">直近 14 日 ／ 1 日あたりの累計再生数</p>
+          </div>
+          <div class="legend">
+            <div><i style="background:#FF0033"></i>YouTube</div>
+            <div><i style="background:#0A66C2"></i>LinkedIn</div>
+            <div><i style="background:#0F172A"></i>X</div>
+            <div><i style="background:#DD2A7B"></i>Instagram</div>
+            <div><i style="background:#1877F2"></i>Facebook</div>
+          </div>
+        </div>
+        <div class="multichart" data-multichart='[{"name":"YouTube","color":"#FF0033","points":[12,14,18,22,28,38,42,52,68,82,92,98,108,118]},{"name":"LinkedIn","color":"#0A66C2","points":[8,10,12,14,18,22,28,32,38,42,48,52,58,62]},{"name":"X","color":"#0F172A","points":[6,7,8,10,12,14,16,18,22,24,28,32,38,42]},{"name":"Instagram","color":"#DD2A7B","points":[4,5,6,8,10,12,14,16,18,22,24,26,28,32]},{"name":"Facebook","color":"#1877F2","points":[3,4,5,6,7,8,10,12,14,15,18,20,22,24]}]' data-x-labels="4/27,4/30,5/3,5/6,5/9,5/11"></div>
+      </section>
+
+      <!-- Per-video distribution table -->
+      <section class="card">
+        <div style="padding:18px 20px; border-bottom:1px solid var(--color-border); display:flex; align-items:center; justify-content:space-between;">
+          <div>
+            <p class="section-title">動画別配信パフォーマンス（直近 30 日）</p>
+            <p class="muted" style="font-size:13px; margin:4px 0 0;">クリックで個別プラットフォームのコメント・反応詳細を表示</p>
+          </div>
+          <button class="btn btn-outline btn-sm">エクスポート</button>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>動画</th>
+              <th>配信先</th>
+              <th style="text-align:right;">YouTube</th>
+              <th style="text-align:right;">LinkedIn</th>
+              <th style="text-align:right;">X</th>
+              <th style="text-align:right;">Instagram</th>
+              <th style="text-align:right;">Facebook</th>
+              <th style="text-align:right;">合計</th>
+              <th style="text-align:right;">流入</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="font-weight:500;">2026 製品ロードマップ説明会<div class="muted" style="font-size:11.5px; font-weight:400;">12:48 ／ 9 月 14 日公開</div></td>
+              <td><div class="ch-stack"><span class="ch-dot youtube" data-channel="youtube" style="width:18px; height:18px; border:1.5px solid #fff;"></span><span class="ch-dot linkedin" data-channel="linkedin" style="width:18px; height:18px; border:1.5px solid #fff;"></span><span class="ch-dot x" data-channel="x" style="width:18px; height:18px; border:1.5px solid #fff;"></span><span class="ch-dot instagram" data-channel="instagram" style="width:18px; height:18px; border:1.5px solid #fff;"></span><span class="ch-dot facebook" data-channel="facebook" style="width:18px; height:18px; border:1.5px solid #fff;"></span></div></td>
+              <td style="text-align:right;" class="num">98,420</td>
+              <td style="text-align:right;" class="num">31,240</td>
+              <td style="text-align:right;" class="num">24,118</td>
+              <td style="text-align:right;" class="num">18,442</td>
+              <td style="text-align:right;" class="num">12,342</td>
+              <td style="text-align:right; font-weight:700;" class="num">184,562</td>
+              <td style="text-align:right; color:var(--color-success); font-weight:600;" class="num">+998</td>
+            </tr>
+            <tr>
+              <td style="font-weight:500;">導入事例：金融業大手 5 社のリアル<div class="muted" style="font-size:11.5px; font-weight:400;">08:22 ／ 8 月 28 日公開</div></td>
+              <td><div class="ch-stack"><span class="ch-dot youtube" data-channel="youtube" style="width:18px; height:18px; border:1.5px solid #fff;"></span><span class="ch-dot linkedin" data-channel="linkedin" style="width:18px; height:18px; border:1.5px solid #fff;"></span><span class="ch-dot x" data-channel="x" style="width:18px; height:18px; border:1.5px solid #fff;"></span></div></td>
+              <td style="text-align:right;" class="num">12,840</td>
+              <td style="text-align:right;" class="num">8,420</td>
+              <td style="text-align:right;" class="num">2,858</td>
+              <td style="text-align:right;" class="num soft">—</td>
+              <td style="text-align:right;" class="num soft">—</td>
+              <td style="text-align:right; font-weight:700;" class="num">24,118</td>
+              <td style="text-align:right; color:var(--color-success); font-weight:600;" class="num">+187</td>
+            </tr>
+            <tr>
+              <td style="font-weight:500;">価格・プランの考え方<div class="muted" style="font-size:11.5px; font-weight:400;">04:08 ／ 9 月 1 日公開</div></td>
+              <td><div class="ch-stack"><span class="ch-dot youtube" data-channel="youtube" style="width:18px; height:18px; border:1.5px solid #fff;"></span><span class="ch-dot linkedin" data-channel="linkedin" style="width:18px; height:18px; border:1.5px solid #fff;"></span><span class="ch-dot facebook" data-channel="facebook" style="width:18px; height:18px; border:1.5px solid #fff;"></span></div></td>
+              <td style="text-align:right;" class="num">9,540</td>
+              <td style="text-align:right;" class="num">7,180</td>
+              <td style="text-align:right;" class="num soft">—</td>
+              <td style="text-align:right;" class="num soft">—</td>
+              <td style="text-align:right;" class="num">3,012</td>
+              <td style="text-align:right; font-weight:700;" class="num">19,732</td>
+              <td style="text-align:right; color:var(--color-success); font-weight:600;" class="num">+152</td>
+            </tr>
+            <tr>
+              <td style="font-weight:500;">Salesforce 連携セットアップ完全版<div class="muted" style="font-size:11.5px; font-weight:400;">15:32 ／ 8 月 18 日公開</div></td>
+              <td><div class="ch-stack"><span class="ch-dot youtube" data-channel="youtube" style="width:18px; height:18px; border:1.5px solid #fff;"></span><span class="ch-dot linkedin" data-channel="linkedin" style="width:18px; height:18px; border:1.5px solid #fff;"></span></div></td>
+              <td style="text-align:right;" class="num">8,624</td>
+              <td style="text-align:right;" class="num">3,684</td>
+              <td style="text-align:right;" class="num soft">—</td>
+              <td style="text-align:right;" class="num soft">—</td>
+              <td style="text-align:right;" class="num soft">—</td>
+              <td style="text-align:right; font-weight:700;" class="num">12,308</td>
+              <td style="text-align:right; color:var(--color-success); font-weight:600;" class="num">+108</td>
+            </tr>
+            <tr>
+              <td style="font-weight:500;">3 分で分かる LeadCast（Shorts）<div class="muted" style="font-size:11.5px; font-weight:400;">03:45 ／ 5 月 4 日公開</div></td>
+              <td><div class="ch-stack"><span class="ch-dot youtube" data-channel="youtube" style="width:18px; height:18px; border:1.5px solid #fff;"></span><span class="ch-dot x" data-channel="x" style="width:18px; height:18px; border:1.5px solid #fff;"></span></div></td>
+              <td style="text-align:right;" class="num">5,418</td>
+              <td style="text-align:right;" class="num soft">—</td>
+              <td style="text-align:right;" class="num">2,424</td>
+              <td style="text-align:right;" class="num soft">—</td>
+              <td style="text-align:right;" class="num soft">—</td>
+              <td style="text-align:right; font-weight:700;" class="num">7,842</td>
+              <td style="text-align:right; color:var(--color-success); font-weight:600;" class="num">+62</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Two columns: comments + AI suggestions -->
+      <div class="grid-2-eq" style="margin-top:16px;">
+        <section class="card">
+          <div style="padding:18px 20px; border-bottom:1px solid var(--color-border);">
+            <p class="section-title">プラットフォーム横断 コメント上位</p>
+            <p class="muted" style="font-size:13px; margin:4px 0 0;">類似コメントは AI が自動グルーピング</p>
+          </div>
+          <div style="padding: 8px 20px 18px;">
+            <div style="padding:12px 0; border-bottom:1px solid var(--color-border);">
+              <div class="row-flex" style="margin-bottom:6px;">
+                <div class="ch-stack"><span class="ch-dot youtube" data-channel="youtube" style="width:18px; height:18px; border:1.5px solid #fff;"></span><span class="ch-dot linkedin" data-channel="linkedin" style="width:18px; height:18px; border:1.5px solid #fff;"></span></div>
+                <div style="flex:1;"><b style="font-size:13px;">「製造業向けの事例も見たい」</b></div>
+                <span class="badge">類似 12 件</span>
+              </div>
+              <div class="muted" style="font-size:12.5px;">直近：田中 良介さん（@tnk_ryo）／ 大島 真奈美さん 他 10 名</div>
+              <div style="margin-top:8px;"><button class="btn btn-outline btn-sm">▸ 1:1 動画を生成して返信</button></div>
+            </div>
+            <div style="padding:12px 0; border-bottom:1px solid var(--color-border);">
+              <div class="row-flex" style="margin-bottom:6px;">
+                <div class="ch-stack"><span class="ch-dot linkedin" data-channel="linkedin" style="width:18px; height:18px; border:1.5px solid #fff;"></span></div>
+                <div style="flex:1;"><b style="font-size:13px;">「kintone との連携、もう少し詳しく」</b></div>
+                <span class="badge">類似 7 件</span>
+              </div>
+              <div class="muted" style="font-size:12.5px;">情報システム部関連の役職者が中心</div>
+              <div style="margin-top:8px;"><button class="btn btn-outline btn-sm">▸ 解説動画を新規制作</button></div>
+            </div>
+            <div style="padding:12px 0;">
+              <div class="row-flex" style="margin-bottom:6px;">
+                <div class="ch-stack"><span class="ch-dot x" data-channel="x" style="width:18px; height:18px; border:1.5px solid #fff;"></span><span class="ch-dot instagram" data-channel="instagram" style="width:18px; height:18px; border:1.5px solid #fff;"></span></div>
+                <div style="flex:1;"><b style="font-size:13px;">「動画内のアニメーション、誰が作ってる？」</b></div>
+                <span class="badge">類似 4 件</span>
+              </div>
+              <div class="muted" style="font-size:12.5px;">クリエイティブ系アカウントからの反応</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <div style="padding:18px 20px; border-bottom:1px solid var(--color-border);">
+            <p class="section-title">AI 配信アドバイザー</p>
+            <p class="muted" style="font-size:13px; margin:4px 0 0;">プラットフォーム別の傾向から、次の打ち手を提案</p>
+          </div>
+          <div style="padding: 16px 20px; display:flex; flex-direction:column; gap:12px;">
+            <div class="persona-card" style="padding:14px 16px;">
+              <div class="row-flex" style="margin-bottom:8px;">
+                <span class="ch-dot linkedin" data-channel="linkedin" style="width:22px; height:22px;"></span>
+                <b style="font-size:13.5px;">LinkedIn での反応が想定の +172%</b>
+              </div>
+              <div class="muted" style="font-size:12.5px; line-height:1.7;">情報システム部・DX 推進室の役職者からの「サイレントいいね」が急増。同セグメント向けに <b style="color:var(--color-text);">「kintone 連携詳細」動画</b> を作成し、LinkedIn 限定配信することを推奨します。</div>
+              <div style="margin-top:10px;"><button class="btn btn-primary btn-sm">この提案を採用</button></div>
+            </div>
+            <div class="persona-card" style="padding:14px 16px;">
+              <div class="row-flex" style="margin-bottom:8px;">
+                <span class="ch-dot x" data-channel="x" style="width:22px; height:22px;"></span>
+                <b style="font-size:13.5px;">X での 8 秒地点 離脱が急上昇</b>
+              </div>
+              <div class="muted" style="font-size:12.5px; line-height:1.7;">冒頭の「LeadCast」ロゴ提示が長すぎる可能性。AI が冒頭 3 秒に「<b style="color:var(--color-text);">数字で語るオープニング</b>」を差し替えたバリエーションを生成しました。A/B テストを開始しますか？</div>
+              <div style="margin-top:10px;"><button class="btn btn-primary btn-sm">A/B テスト開始</button></div>
+            </div>
+            <div class="persona-card" style="padding:14px 16px;">
+              <div class="row-flex" style="margin-bottom:8px;">
+                <span class="ch-dot instagram" data-channel="instagram" style="width:22px; height:22px;"></span>
+                <b style="font-size:13.5px;">Instagram Reels の縦動画機能 未活用</b>
+              </div>
+              <div class="muted" style="font-size:12.5px; line-height:1.7;">既存の横動画を 9:16 縦に AI が自動再構成可能です。同一素材の縦版を作成し、Reels で再配信することで <b style="color:var(--color-text);">平均 +38%</b> の到達拡大が見込めます。</div>
+              <div style="margin-top:10px;"><button class="btn btn-outline btn-sm">縦動画を生成</button></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

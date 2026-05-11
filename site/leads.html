@@ -32,13 +32,16 @@
     <div class="nav-section">運用</div>
     <a class="nav-item" data-nav="dashboard.html" href="dashboard.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>ダッシュボード</a>
     <a class="nav-item" data-nav="videos.html" href="videos.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2"></rect></svg>動画ライブラリ</a>
-    <a class="nav-item" href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12a15.3 15.3 0 0 1 4-10z"></path></svg>チャンネル</a>
-    <a class="nav-item" href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M12 1v6m0 10v6M4.22 4.22l4.24 4.24m7.08 7.08l4.24 4.24M1 12h6m10 0h6"></path></svg>インタラクション</a>
+
+    <div class="nav-section">配信</div>
+    <a class="nav-item" data-nav="distribution.html" href="distribution.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><line x1="8.6" y1="10.7" x2="15.4" y2="7.3"/><line x1="8.6" y1="13.3" x2="15.4" y2="16.7"/></svg>1:n SNS 配信</a>
+    <a class="nav-item" data-nav="personalize.html" href="personalize.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5z"/><circle cx="18" cy="18" r="3"/></svg>1:1 AI パーソナライズ</a>
+    <a class="nav-item" data-nav="live.html" href="live.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M16.95 7.05a7 7 0 010 9.9M7.05 7.05a7 7 0 000 9.9"/></svg>Live 配信</a>
 
     <div class="nav-section">セールス</div>
     <a class="nav-item" data-nav="leads.html" href="leads.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>リード管理</a>
-    <a class="nav-item" href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>ワークフロー</a>
     <a class="nav-item" data-nav="analytics.html" href="analytics.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>分析</a>
+    <a class="nav-item" href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>ワークフロー</a>
 
     <div class="nav-section">設定</div>
     <a class="nav-item" href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>連携・統合</a>
@@ -97,10 +100,19 @@
             <input type="number" value="100" style="width:48px; padding:4px 6px; border:1px solid var(--color-border); border-radius:4px;">
           </div>
 
+          <h4>流入元</h4>
+          <label><input type="checkbox" checked> <span class="ch-dot youtube" data-channel="youtube" style="width:14px; height:14px; border:0;"></span> YouTube <span class="muted" style="margin-left:auto; font-family:var(--font-en); font-size:12px;">428</span></label>
+          <label><input type="checkbox" checked> <span class="ch-dot linkedin" data-channel="linkedin" style="width:14px; height:14px; border:0;"></span> LinkedIn <span class="muted" style="margin-left:auto; font-family:var(--font-en); font-size:12px;">312</span></label>
+          <label><input type="checkbox" checked> <span class="ch-dot x" data-channel="x" style="width:14px; height:14px; border:0;"></span> X <span class="muted" style="margin-left:auto; font-family:var(--font-en); font-size:12px;">142</span></label>
+          <label><input type="checkbox"> <span class="ch-dot instagram" data-channel="instagram" style="width:14px; height:14px; border:0;"></span> Instagram <span class="muted" style="margin-left:auto; font-family:var(--font-en); font-size:12px;">68</span></label>
+          <label><input type="checkbox"> <span class="ch-dot facebook" data-channel="facebook" style="width:14px; height:14px; border:0;"></span> Facebook <span class="muted" style="margin-left:auto; font-family:var(--font-en); font-size:12px;">48</span></label>
+          <label><input type="checkbox" checked> <span class="ch-dot leadcast" data-channel="leadcast" style="width:14px; height:14px; border:0;"></span> 自社プレイヤー <span class="muted" style="margin-left:auto; font-family:var(--font-en); font-size:12px;">218</span></label>
+
           <h4>視聴行動</h4>
           <label><input type="checkbox" checked> 完走（70% 以上）</label>
           <label><input type="checkbox"> 複数動画視聴</label>
-          <label><input type="checkbox"> クイズ回答あり</label>
+          <label><input type="checkbox"> 1:1 動画 完視聴</label>
+          <label><input type="checkbox"> Live 挙手・予約</label>
           <label><input type="checkbox"> ブッキング完了</label>
 
           <h4>アサイン</h4>
@@ -143,6 +155,7 @@
                 <tr>
                   <th style="width:40px;"><input type="checkbox" aria-label="すべて選択"></th>
                   <th>リード</th>
+                  <th>流入元</th>
                   <th>会社・部署</th>
                   <th>スコア</th>
                   <th>ステージ</th>
@@ -164,10 +177,11 @@
                       </div>
                     </div>
                   </td>
+                  <td><span class="ch-chip ch-youtube" data-channel="youtube"><span class="ch-ico"></span>YouTube</span></td>
                   <td><div style="font-weight:500;">株式会社グリーンテック</div><div class="muted" style="font-size:12px;">経営戦略本部 ／ 取締役</div></td>
                   <td><div class="score"><div class="score-bar"><span style="width:94%"></span></div><span class="score-num">94</span></div></td>
                   <td><span class="badge badge-danger">Qualified</span></td>
-                  <td><div style="font-size:13px;">クイズ回答「自分が決裁者」</div><div class="muted" style="font-size:11.5px;">3 分前</div></td>
+                  <td><div style="font-size:13px;">1:1 動画完視聴 → 商談予約</div><div class="muted" style="font-size:11.5px;">3 分前</div></td>
                   <td><div class="avatar-row"><span class="avatar-sm" style="background:#0EA5A4;">高</span><span style="font-size:12.5px;">高橋</span></div></td>
                   <td><span class="badge badge-success">SF 同期済</span></td>
                   <td><button class="btn btn-ghost btn-sm">詳細</button></td>
@@ -183,10 +197,11 @@
                       </div>
                     </div>
                   </td>
+                  <td><span class="ch-chip ch-linkedin" data-channel="linkedin"><span class="ch-ico"></span>LinkedIn</span></td>
                   <td><div style="font-weight:500;">フジサワ商事 株式会社</div><div class="muted" style="font-size:12px;">マーケティング部 ／ 部長</div></td>
                   <td><div class="score"><div class="score-bar"><span style="width:88%"></span></div><span class="score-num">88</span></div></td>
                   <td><span class="badge badge-danger">Qualified</span></td>
-                  <td><div style="font-size:13px;">商談予約完了（11/15 14:00）</div><div class="muted" style="font-size:11.5px;">32 分前</div></td>
+                  <td><div style="font-size:13px;">商談予約完了（5/15 14:00）</div><div class="muted" style="font-size:11.5px;">32 分前</div></td>
                   <td><div class="avatar-row"><span class="avatar-sm" style="background:#0EA5A4;">高</span><span style="font-size:12.5px;">高橋</span></div></td>
                   <td><span class="badge badge-success">kintone</span></td>
                   <td><button class="btn btn-ghost btn-sm">詳細</button></td>
@@ -202,10 +217,11 @@
                       </div>
                     </div>
                   </td>
+                  <td><span class="ai-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5z"/></svg>1:1 視聴</span></td>
                   <td><div style="font-weight:500;">株式会社マイクロ電機</div><div class="muted" style="font-size:12px;">情報システム部 ／ 部長</div></td>
                   <td><div class="score"><div class="score-bar"><span style="width:82%"></span></div><span class="score-num">82</span></div></td>
                   <td><span class="badge badge-warning">Engaged</span></td>
-                  <td><div style="font-size:13px;">Pricing 動画を完走</div><div class="muted" style="font-size:11.5px;">14 分前</div></td>
+                  <td><div style="font-size:13px;">1:1 動画「セキュリティ要件」を 3 回視聴</div><div class="muted" style="font-size:11.5px;">14 分前</div></td>
                   <td><div class="muted" style="font-size:12.5px;">未割当</div></td>
                   <td><span class="badge badge-success">SF 同期済</span></td>
                   <td><button class="btn btn-ghost btn-sm">詳細</button></td>
@@ -221,10 +237,11 @@
                       </div>
                     </div>
                   </td>
+                  <td><span class="ch-chip ch-x" data-channel="x"><span class="ch-ico"></span>X</span></td>
                   <td><div style="font-weight:500;">日本生命グループ</div><div class="muted" style="font-size:12px;">DX 推進室 ／ 主任</div></td>
                   <td><div class="score"><div class="score-bar"><span style="width:79%"></span></div><span class="score-num">79</span></div></td>
                   <td><span class="badge badge-warning">Engaged</span></td>
-                  <td><div style="font-size:13px;">金融業事例を 3 回視聴</div><div class="muted" style="font-size:11.5px;">3 時間前</div></td>
+                  <td><div style="font-size:13px;">Live 挙手 2 回 / 金融事例 3 回視聴</div><div class="muted" style="font-size:11.5px;">3 時間前</div></td>
                   <td><div class="avatar-row"><span class="avatar-sm" style="background:#7C3AED;">小</span><span style="font-size:12.5px;">小林</span></div></td>
                   <td><span class="badge badge-warning">同期エラー</span></td>
                   <td><button class="btn btn-ghost btn-sm">詳細</button></td>
@@ -240,10 +257,11 @@
                       </div>
                     </div>
                   </td>
+                  <td><span class="ch-chip ch-leadcast" data-channel="leadcast"><span class="ch-ico"></span>自社</span></td>
                   <td><div style="font-weight:500;">関西ロジスティクス 株式会社</div><div class="muted" style="font-size:12px;">経営企画 ／ マネージャー</div></td>
                   <td><div class="score"><div class="score-bar"><span style="width:74%"></span></div><span class="score-num">74</span></div></td>
                   <td><span class="badge badge-warning">Engaged</span></td>
-                  <td><div style="font-size:13px;">資料請求フォーム送信</div><div class="muted" style="font-size:11.5px;">5 時間前</div></td>
+                  <td><div style="font-size:13px;">資料請求フォーム送信 ／ 1:1 動画リクエスト</div><div class="muted" style="font-size:11.5px;">5 時間前</div></td>
                   <td><div class="avatar-row"><span class="avatar-sm">中</span><span style="font-size:12.5px;">中西</span></div></td>
                   <td><span class="badge badge-success">SF 同期済</span></td>
                   <td><button class="btn btn-ghost btn-sm">詳細</button></td>
@@ -259,6 +277,7 @@
                       </div>
                     </div>
                   </td>
+                  <td><span class="ch-chip ch-youtube" data-channel="youtube"><span class="ch-ico"></span>YouTube</span></td>
                   <td><div style="font-weight:500;">株式会社マイクロ電機</div><div class="muted" style="font-size:12px;">マーケティング部</div></td>
                   <td><div class="score"><div class="score-bar"><span style="width:68%"></span></div><span class="score-num">68</span></div></td>
                   <td><span class="badge badge-warning">Engaged</span></td>
@@ -278,10 +297,11 @@
                       </div>
                     </div>
                   </td>
+                  <td><span class="ch-chip ch-linkedin" data-channel="linkedin"><span class="ch-ico"></span>LinkedIn</span></td>
                   <td><div style="font-weight:500;">株式会社東洋クラウド</div><div class="muted" style="font-size:12px;">CTO 室</div></td>
                   <td><div class="score"><div class="score-bar"><span style="width:64%"></span></div><span class="score-num">64</span></div></td>
                   <td><span class="badge badge-warning">Engaged</span></td>
-                  <td><div style="font-size:13px;">VQL に昇格</div><div class="muted" style="font-size:11.5px;">2 時間前</div></td>
+                  <td><div style="font-size:13px;">VQL に昇格 / Live 登録済</div><div class="muted" style="font-size:11.5px;">2 時間前</div></td>
                   <td><div class="avatar-row"><span class="avatar-sm" style="background:#0EA5A4;">高</span><span style="font-size:12.5px;">高橋</span></div></td>
                   <td><span class="badge badge-success">kintone</span></td>
                   <td><button class="btn btn-ghost btn-sm">詳細</button></td>
@@ -297,10 +317,11 @@
                       </div>
                     </div>
                   </td>
+                  <td><span class="ch-chip ch-instagram" data-channel="instagram"><span class="ch-ico"></span>IG</span></td>
                   <td><div style="font-weight:500;">株式会社サクラソフト</div><div class="muted" style="font-size:12px;">プロダクト開発本部</div></td>
                   <td><div class="score"><div class="score-bar"><span style="width:58%"></span></div><span class="score-num">58</span></div></td>
                   <td><span class="badge">New</span></td>
-                  <td><div style="font-size:13px;">メールゲート通過</div><div class="muted" style="font-size:11.5px;">1 日前</div></td>
+                  <td><div style="font-size:13px;">Reels から流入 → メールゲート通過</div><div class="muted" style="font-size:11.5px;">1 日前</div></td>
                   <td><div class="muted" style="font-size:12.5px;">未割当</div></td>
                   <td><span class="muted" style="font-size:12px;">未同期</span></td>
                   <td><button class="btn btn-ghost btn-sm">詳細</button></td>
